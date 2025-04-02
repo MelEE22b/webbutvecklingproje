@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0055aa;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo h1 {
+    color: #0066cc;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #666;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0066cc;
+}
+
+#hero {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: white;
+    color: #0066cc;
+    font-size: 16px;
+    padding: 12px 30px;
+}
+
+#hero .btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Produkter */
+#produkter {
+    padding: 60px 0;
+}
+
+#produkter h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    padding: 15px 15px 5px;
+    font-size: 18px;
+}
+
+.product-card .price {
+    padding: 0 15px;
+    font-weight: bold;
+    color: #0066cc;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    padding: 0 15px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.product-card .btn {
+    width: 100%;
+    border-radius: 0;
+    padding: 12px;
+}
+
+/* Offer */
+#erbjudanden {
+    padding: 60px 0;
+    background-color: #f0f7ff;
+}
+
+#erbjudanden h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.offer-banner {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.offer-banner h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer-banner p {
+    margin-bottom: 20px;
+}
+
+.offer-banner .btn {
+    background-color: white;
+    color: #ff5722;
+}
+
+.offer-banner .btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Om oss */
+#om-oss {
+    padding: 60px 0;
+}
+
+#om-oss h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+#om-oss p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* kontakta */
+#kontakt {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#kontakt h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #ccc;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Responsiva stiler */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    #hero {
+        padding: 60px 0;
+    }
+    
+    #hero h2 {
+        font-size: 28px;
+    }
+}
